@@ -172,6 +172,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoValidate = AutoValidate.EnablePreventFocusChange;
             ClientSize = new Size(571, 331);
             Controls.Add(pictureBox1);
             Controls.Add(panel2);

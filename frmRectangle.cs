@@ -21,5 +21,10 @@ namespace vbGeometry
         {
 
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -40,8 +40,8 @@
             lblResult = new Label();
             lblWidth = new Label();
             panel1 = new Panel();
-            lblHeight = new Label();
             txtHeight = new TextBox();
+            lblHeight = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -88,6 +88,7 @@
             btnMenu.TabIndex = 18;
             btnMenu.Text = "Back to menu.";
             btnMenu.UseVisualStyleBackColor = true;
+            btnMenu.Click += btnMenu_Click;
             // 
             // btnCircumference
             // 
@@ -169,6 +170,16 @@
             panel1.Size = new Size(353, 95);
             panel1.TabIndex = 19;
             // 
+            // txtHeight
+            // 
+            txtHeight.BackColor = Color.White;
+            txtHeight.BorderStyle = BorderStyle.None;
+            txtHeight.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtHeight.Location = new Point(87, 37);
+            txtHeight.Name = "txtHeight";
+            txtHeight.Size = new Size(254, 22);
+            txtHeight.TabIndex = 21;
+            // 
             // lblHeight
             // 
             lblHeight.AutoSize = true;
@@ -179,16 +190,6 @@
             lblHeight.Size = new Size(75, 21);
             lblHeight.TabIndex = 21;
             lblHeight.Text = "HIEGHT :";
-            // 
-            // txtHeight
-            // 
-            txtHeight.BackColor = Color.White;
-            txtHeight.BorderStyle = BorderStyle.None;
-            txtHeight.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtHeight.Location = new Point(87, 37);
-            txtHeight.Name = "txtHeight";
-            txtHeight.Size = new Size(254, 22);
-            txtHeight.TabIndex = 21;
             // 
             // frmRectangle
             // 

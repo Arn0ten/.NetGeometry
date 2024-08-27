@@ -27,19 +27,16 @@ namespace vbGeometry
         {
             double radius, area;
             radius = Convert.ToDouble(txtRadius.Text);
-            area = Math.PI * (Math.Sqrt(radius));
+            area = Math.PI * radius * radius;
             txtCResult.Text = Convert.ToString(area);
-            txtRadius.Clear();
         }
 
         private void btnCircumference_Click(object sender, EventArgs e)
         {
-
             double radius, circ;
             radius = Convert.ToDouble(txtRadius.Text);
             circ = 2 * Math.PI * radius;
             txtCResult.Text = Convert.ToString(circ);
-            txtRadius.Clear();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -50,8 +47,7 @@ namespace vbGeometry
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            Form1 Check = new Form1();
-            Check.ShowDialog();
+            this.Close();
         }
     }
 }
