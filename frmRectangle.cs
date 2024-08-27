@@ -21,7 +21,31 @@ namespace vbGeometry
         {
 
         }
+        private void btnArea_Click(object sender, EventArgs e)
+        {
+            int length, width, area;
+            
+            if (txtLength.Text == "")
+            {
+                MessageBox.Show("Input Length or Width.");
+            }
+            else
+            {
+                length = Convert.ToInt32(txtLength.Text);
+                width = Convert.ToInt32(txtWidth.Text);
+                area = length * width;
+                txtRResult.Text = Convert.ToString(area);
+            }
 
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtLength.Clear();
+            txtWidth.Clear();
+            txtRResult.Clear();
+        }
         private void btnMenu_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -26,17 +26,33 @@ namespace vbGeometry
         private void btnArea_Click(object sender, EventArgs e)
         {
             double radius, area;
-            radius = Convert.ToDouble(txtRadius.Text);
-            area = Math.PI * radius * radius;
-            txtCResult.Text = Convert.ToString(area);
+            if (txtRadius.Text == "")
+            {
+                MessageBox.Show("Input Radius");
+            }
+            else
+            {
+                radius = Convert.ToDouble(txtRadius.Text);
+                area = Math.PI * radius * radius;
+                txtCResult.Text = Convert.ToString(area);
+            }
+            
         }
 
         private void btnCircumference_Click(object sender, EventArgs e)
         {
             double radius, circ;
-            radius = Convert.ToDouble(txtRadius.Text);
-            circ = 2 * Math.PI * radius;
-            txtCResult.Text = Convert.ToString(circ);
+            if(txtRadius.Text == "")
+            {
+                MessageBox.Show("Input Radius");
+            }
+            else
+            {
+                radius = Convert.ToDouble(txtRadius.Text);
+                circ = 2 * Math.PI * radius;
+                txtCResult.Text = Convert.ToString(circ);
+            }
+ 
         }
 
         private void btnClear_Click(object sender, EventArgs e)
