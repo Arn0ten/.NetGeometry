@@ -37,18 +37,20 @@
             // 
             panel2.BackColor = Color.Red;
             panel2.Controls.Add(lblTriangle);
-            panel2.Location = new Point(1, 0);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(569, 70);
+            panel2.Size = new Size(571, 70);
             panel2.TabIndex = 10;
             // 
             // lblTriangle
             // 
+            lblTriangle.Anchor = AnchorStyles.None;
             lblTriangle.AutoSize = true;
             lblTriangle.BackColor = Color.Red;
             lblTriangle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTriangle.ForeColor = Color.White;
-            lblTriangle.Location = new Point(260, 23);
+            lblTriangle.Location = new Point(261, 23);
             lblTriangle.Name = "lblTriangle";
             lblTriangle.Size = new Size(86, 21);
             lblTriangle.TabIndex = 0;

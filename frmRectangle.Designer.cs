@@ -51,13 +51,15 @@
             // 
             panel2.BackColor = Color.Cyan;
             panel2.Controls.Add(lblRectangle);
-            panel2.Location = new Point(2, 0);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(569, 70);
+            panel2.Size = new Size(571, 70);
             panel2.TabIndex = 10;
             // 
             // lblRectangle
             // 
+            lblRectangle.Anchor = AnchorStyles.None;
             lblRectangle.AutoSize = true;
             lblRectangle.BackColor = Color.Cyan;
             lblRectangle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -70,6 +72,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.BackColor = Color.White;
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
             pictureBox1.Image = Properties.Resources.rectangle;
@@ -82,6 +85,7 @@
             // 
             // btnMenu
             // 
+            btnMenu.Anchor = AnchorStyles.None;
             btnMenu.Location = new Point(432, 251);
             btnMenu.Name = "btnMenu";
             btnMenu.Size = new Size(127, 42);
@@ -92,6 +96,7 @@
             // 
             // btnCircumference
             // 
+            btnCircumference.Anchor = AnchorStyles.None;
             btnCircumference.Location = new Point(432, 202);
             btnCircumference.Name = "btnCircumference";
             btnCircumference.Size = new Size(127, 42);
@@ -101,6 +106,7 @@
             // 
             // btnClear
             // 
+            btnClear.Anchor = AnchorStyles.None;
             btnClear.Location = new Point(291, 251);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(127, 42);
@@ -111,6 +117,7 @@
             // 
             // btnArea
             // 
+            btnArea.Anchor = AnchorStyles.None;
             btnArea.Location = new Point(291, 202);
             btnArea.Name = "btnArea";
             btnArea.Size = new Size(127, 42);
@@ -121,6 +128,7 @@
             // 
             // txtRResult
             // 
+            txtRResult.Anchor = AnchorStyles.None;
             txtRResult.BackColor = Color.White;
             txtRResult.BorderStyle = BorderStyle.None;
             txtRResult.Enabled = false;
@@ -133,6 +141,7 @@
             // 
             // txtLength
             // 
+            txtLength.Anchor = AnchorStyles.None;
             txtLength.BackColor = Color.White;
             txtLength.BorderStyle = BorderStyle.None;
             txtLength.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -143,6 +152,7 @@
             // 
             // lblResult
             // 
+            lblResult.Anchor = AnchorStyles.None;
             lblResult.AutoSize = true;
             lblResult.BackColor = Color.White;
             lblResult.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
@@ -154,6 +164,7 @@
             // 
             // lblLength
             // 
+            lblLength.Anchor = AnchorStyles.None;
             lblLength.AutoSize = true;
             lblLength.BackColor = Color.White;
             lblLength.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
@@ -165,6 +176,7 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.None;
             panel1.BackColor = Color.White;
             panel1.Controls.Add(txtWidth);
             panel1.Controls.Add(lblWidth);

@@ -45,11 +45,15 @@
             // 
             // btnCircle
             // 
+            btnCircle.Anchor = AnchorStyles.None;
             btnCircle.BackColor = Color.Chartreuse;
             btnCircle.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
             btnCircle.ForeColor = Color.White;
             btnCircle.Location = new Point(85, 116);
+            btnCircle.Margin = new Padding(10);
+            btnCircle.MinimumSize = new Size(20, 20);
             btnCircle.Name = "btnCircle";
+            btnCircle.Padding = new Padding(10);
             btnCircle.Size = new Size(225, 62);
             btnCircle.TabIndex = 0;
             btnCircle.Text = "Circle";
@@ -58,11 +62,15 @@
             // 
             // btnRectangle
             // 
+            btnRectangle.Anchor = AnchorStyles.None;
             btnRectangle.BackColor = Color.Cyan;
             btnRectangle.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
             btnRectangle.ForeColor = Color.White;
             btnRectangle.Location = new Point(85, 188);
+            btnRectangle.Margin = new Padding(10);
+            btnRectangle.MinimumSize = new Size(20, 20);
             btnRectangle.Name = "btnRectangle";
+            btnRectangle.Padding = new Padding(10);
             btnRectangle.Size = new Size(225, 62);
             btnRectangle.TabIndex = 1;
             btnRectangle.Text = "Rectangle";
@@ -71,11 +79,15 @@
             // 
             // btnSquare
             // 
+            btnSquare.Anchor = AnchorStyles.None;
             btnSquare.BackColor = Color.Fuchsia;
             btnSquare.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
             btnSquare.ForeColor = Color.White;
             btnSquare.Location = new Point(85, 261);
+            btnSquare.Margin = new Padding(10);
+            btnSquare.MinimumSize = new Size(20, 20);
             btnSquare.Name = "btnSquare";
+            btnSquare.Padding = new Padding(10);
             btnSquare.Size = new Size(225, 62);
             btnSquare.TabIndex = 2;
             btnSquare.Text = "Square";
@@ -84,11 +96,15 @@
             // 
             // btnTriangle
             // 
+            btnTriangle.Anchor = AnchorStyles.None;
             btnTriangle.BackColor = Color.Red;
             btnTriangle.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
             btnTriangle.ForeColor = Color.White;
             btnTriangle.Location = new Point(85, 337);
+            btnTriangle.Margin = new Padding(10);
+            btnTriangle.MinimumSize = new Size(20, 20);
             btnTriangle.Name = "btnTriangle";
+            btnTriangle.Padding = new Padding(10);
             btnTriangle.Size = new Size(225, 62);
             btnTriangle.TabIndex = 3;
             btnTriangle.Text = "Triangle";
@@ -97,11 +113,15 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.BackColor = Color.Chartreuse;
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
             pictureBox1.Image = Properties.Resources.dry_clean;
             pictureBox1.Location = new Point(97, 128);
+            pictureBox1.Margin = new Padding(10);
+            pictureBox1.MinimumSize = new Size(20, 20);
             pictureBox1.Name = "pictureBox1";
+            pictureBox1.Padding = new Padding(10);
             pictureBox1.Size = new Size(39, 39);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
@@ -109,11 +129,15 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.None;
             pictureBox2.BackColor = Color.Cyan;
             pictureBox2.BackgroundImageLayout = ImageLayout.None;
             pictureBox2.Image = Properties.Resources.rectangular_shape_outline;
             pictureBox2.Location = new Point(97, 199);
+            pictureBox2.Margin = new Padding(10);
+            pictureBox2.MinimumSize = new Size(20, 20);
             pictureBox2.Name = "pictureBox2";
+            pictureBox2.Padding = new Padding(10);
             pictureBox2.Size = new Size(39, 39);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 5;
@@ -121,11 +145,15 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.Anchor = AnchorStyles.None;
             pictureBox3.BackColor = Color.Fuchsia;
             pictureBox3.BackgroundImageLayout = ImageLayout.None;
             pictureBox3.Image = Properties.Resources.square;
             pictureBox3.Location = new Point(97, 273);
+            pictureBox3.Margin = new Padding(10);
+            pictureBox3.MinimumSize = new Size(20, 20);
             pictureBox3.Name = "pictureBox3";
+            pictureBox3.Padding = new Padding(10);
             pictureBox3.Size = new Size(39, 39);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 6;
@@ -133,11 +161,15 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.Anchor = AnchorStyles.None;
             pictureBox4.BackColor = Color.Red;
             pictureBox4.BackgroundImageLayout = ImageLayout.None;
             pictureBox4.Image = Properties.Resources.triangle;
             pictureBox4.Location = new Point(97, 349);
+            pictureBox4.Margin = new Padding(10);
+            pictureBox4.MinimumSize = new Size(20, 20);
             pictureBox4.Name = "pictureBox4";
+            pictureBox4.Padding = new Padding(10);
             pictureBox4.Size = new Size(39, 39);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 7;

@@ -37,13 +37,15 @@
             // 
             panel2.BackColor = Color.Fuchsia;
             panel2.Controls.Add(lblSquare);
-            panel2.Location = new Point(1, 0);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(569, 70);
+            panel2.Size = new Size(571, 70);
             panel2.TabIndex = 10;
             // 
             // lblSquare
             // 
+            lblSquare.Anchor = AnchorStyles.None;
             lblSquare.AutoSize = true;
             lblSquare.BackColor = Color.Fuchsia;
             lblSquare.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);

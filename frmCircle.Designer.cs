@@ -46,6 +46,7 @@
             // 
             // lblRadius
             // 
+            lblRadius.Anchor = AnchorStyles.None;
             lblRadius.AutoSize = true;
             lblRadius.BackColor = Color.White;
             lblRadius.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
@@ -57,6 +58,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.BackColor = Color.White;
             label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
@@ -68,6 +70,7 @@
             // 
             // txtRadius
             // 
+            txtRadius.Anchor = AnchorStyles.None;
             txtRadius.BackColor = Color.White;
             txtRadius.BorderStyle = BorderStyle.None;
             txtRadius.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -78,6 +81,7 @@
             // 
             // txtCResult
             // 
+            txtCResult.Anchor = AnchorStyles.None;
             txtCResult.BackColor = Color.White;
             txtCResult.BorderStyle = BorderStyle.None;
             txtCResult.Enabled = false;
@@ -89,6 +93,7 @@
             // 
             // btnArea
             // 
+            btnArea.Anchor = AnchorStyles.None;
             btnArea.Location = new Point(292, 203);
             btnArea.Name = "btnArea";
             btnArea.Size = new Size(127, 42);
@@ -99,6 +104,7 @@
             // 
             // btnClear
             // 
+            btnClear.Anchor = AnchorStyles.None;
             btnClear.Location = new Point(292, 252);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(127, 42);
@@ -109,6 +115,7 @@
             // 
             // btnCircumference
             // 
+            btnCircumference.Anchor = AnchorStyles.None;
             btnCircumference.Location = new Point(433, 203);
             btnCircumference.Name = "btnCircumference";
             btnCircumference.Size = new Size(127, 42);
@@ -119,6 +126,7 @@
             // 
             // btnMenu
             // 
+            btnMenu.Anchor = AnchorStyles.None;
             btnMenu.Location = new Point(433, 252);
             btnMenu.Name = "btnMenu";
             btnMenu.Size = new Size(127, 42);
@@ -129,6 +137,7 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.None;
             panel1.BackColor = Color.White;
             panel1.Location = new Point(207, 102);
             panel1.Name = "panel1";
@@ -139,18 +148,20 @@
             // 
             panel2.BackColor = Color.Chartreuse;
             panel2.Controls.Add(lblCircle);
-            panel2.Location = new Point(1, 1);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(569, 70);
+            panel2.Size = new Size(571, 70);
             panel2.TabIndex = 9;
             // 
             // lblCircle
             // 
+            lblCircle.Anchor = AnchorStyles.None;
             lblCircle.AutoSize = true;
             lblCircle.BackColor = Color.Chartreuse;
             lblCircle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblCircle.ForeColor = Color.White;
-            lblCircle.Location = new Point(277, 22);
+            lblCircle.Location = new Point(278, 22);
             lblCircle.Name = "lblCircle";
             lblCircle.Size = new Size(62, 21);
             lblCircle.TabIndex = 0;
@@ -158,6 +169,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.BackColor = Color.White;
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
             pictureBox1.Image = Properties.Resources.Screenshot_2024_08_27_162622;
