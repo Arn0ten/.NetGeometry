@@ -16,5 +16,16 @@ namespace vbGeometry
         {
             InitializeComponent();
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnArea_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }

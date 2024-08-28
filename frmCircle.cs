@@ -25,10 +25,11 @@ namespace vbGeometry
 
         private void btnArea_Click(object sender, EventArgs e)
         {
+            int parsdValue;
             double radius, area;
-            if (txtRadius.Text == "")
+            if (txtRadius.Text == "" || !int.TryParse(txtRadius.Text,out parsdValue))
             {
-                MessageBox.Show("Input Radius");
+                MessageBox.Show("Input Valid Radius");
             }
             else
             {
@@ -41,10 +42,11 @@ namespace vbGeometry
 
         private void btnCircumference_Click(object sender, EventArgs e)
         {
+            int parsdValue;
             double radius, circ;
-            if(txtRadius.Text == "")
+            if (txtRadius.Text == "" || !int.TryParse(txtRadius.Text, out parsdValue))
             {
-                MessageBox.Show("Input Radius");
+                MessageBox.Show("Input Valid Radius");
             }
             else
             {

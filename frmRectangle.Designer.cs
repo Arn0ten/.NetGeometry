@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRectangle));
             panel2 = new Panel();
             lblRectangle = new Label();
             pictureBox1 = new PictureBox();
             btnMenu = new Button();
-            btnCircumference = new Button();
             btnClear = new Button();
             btnArea = new Button();
             txtRResult = new TextBox();
@@ -94,16 +94,6 @@
             btnMenu.UseVisualStyleBackColor = true;
             btnMenu.Click += btnMenu_Click;
             // 
-            // btnCircumference
-            // 
-            btnCircumference.Anchor = AnchorStyles.None;
-            btnCircumference.Location = new Point(432, 202);
-            btnCircumference.Name = "btnCircumference";
-            btnCircumference.Size = new Size(127, 42);
-            btnCircumference.TabIndex = 17;
-            btnCircumference.Text = "Circumference";
-            btnCircumference.UseVisualStyleBackColor = true;
-            // 
             // btnClear
             // 
             btnClear.Anchor = AnchorStyles.None;
@@ -120,7 +110,7 @@
             btnArea.Anchor = AnchorStyles.None;
             btnArea.Location = new Point(291, 202);
             btnArea.Name = "btnArea";
-            btnArea.Size = new Size(127, 42);
+            btnArea.Size = new Size(268, 42);
             btnArea.TabIndex = 15;
             btnArea.Text = "Area";
             btnArea.UseVisualStyleBackColor = true;
@@ -213,7 +203,6 @@
             ClientSize = new Size(571, 331);
             Controls.Add(pictureBox1);
             Controls.Add(btnMenu);
-            Controls.Add(btnCircumference);
             Controls.Add(btnClear);
             Controls.Add(btnArea);
             Controls.Add(txtRResult);
@@ -222,6 +211,7 @@
             Controls.Add(lblLength);
             Controls.Add(panel1);
             Controls.Add(panel2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmRectangle";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Rectangle";
@@ -240,7 +230,6 @@
         private Label lblRectangle;
         private PictureBox pictureBox1;
         private Button btnMenu;
-        private Button btnCircumference;
         private Button btnClear;
         private Button btnArea;
         private TextBox txtRResult;

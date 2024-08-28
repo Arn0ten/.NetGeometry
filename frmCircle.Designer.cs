@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCircle));
             lblRadius = new Label();
             label2 = new Label();
             txtRadius = new TextBox();
@@ -197,6 +198,7 @@
             Controls.Add(label2);
             Controls.Add(lblRadius);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmCircle";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Circle";
