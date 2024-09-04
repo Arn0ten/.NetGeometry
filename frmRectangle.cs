@@ -24,10 +24,13 @@ namespace vbGeometry
         private void btnArea_Click(object sender, EventArgs e)
         {
             int length, width, area;
-            
-            if (txtLength.Text == "")
+            int parseValue;
+
+
+            if (txtLength.Text == "" || txtWidth.Text == "" || !int.TryParse(txtLength.Text, out parseValue) || !int.TryParse(txtWidth.Text, out parseValue))
             {
-                MessageBox.Show("Input Length or Width.");
+                btnClear_Click(sender, e);
+                MessageBox.Show("Input Valid Input");
             }
             else
             {

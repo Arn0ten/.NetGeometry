@@ -34,13 +34,13 @@
             btnMenu = new Button();
             btnClear = new Button();
             btnArea = new Button();
-            txtSResult = new TextBox();
-            txtSideA = new TextBox();
+            txtTResult = new TextBox();
+            txtBase = new TextBox();
             lblResult = new Label();
-            lblSideA = new Label();
+            lblBase = new Label();
             panel1 = new Panel();
-            txtSideB = new TextBox();
-            lblSideB = new Label();
+            txtHeight = new TextBox();
+            lblHeight = new Label();
             pictureBox1 = new PictureBox();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -90,6 +90,7 @@
             btnClear.TabIndex = 35;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
             // 
             // btnArea
             // 
@@ -102,28 +103,28 @@
             btnArea.UseVisualStyleBackColor = true;
             btnArea.Click += btnArea_Click;
             // 
-            // txtSResult
+            // txtTResult
             // 
-            txtSResult.Anchor = AnchorStyles.None;
-            txtSResult.BackColor = Color.White;
-            txtSResult.BorderStyle = BorderStyle.None;
-            txtSResult.Enabled = false;
-            txtSResult.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtSResult.Location = new Point(301, 171);
-            txtSResult.Name = "txtSResult";
-            txtSResult.Size = new Size(245, 22);
-            txtSResult.TabIndex = 33;
+            txtTResult.Anchor = AnchorStyles.None;
+            txtTResult.BackColor = Color.White;
+            txtTResult.BorderStyle = BorderStyle.None;
+            txtTResult.Enabled = false;
+            txtTResult.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtTResult.Location = new Point(301, 171);
+            txtTResult.Name = "txtTResult";
+            txtTResult.Size = new Size(245, 22);
+            txtTResult.TabIndex = 33;
             // 
-            // txtSideA
+            // txtBase
             // 
-            txtSideA.Anchor = AnchorStyles.None;
-            txtSideA.BackColor = Color.White;
-            txtSideA.BorderStyle = BorderStyle.None;
-            txtSideA.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtSideA.Location = new Point(301, 106);
-            txtSideA.Name = "txtSideA";
-            txtSideA.Size = new Size(246, 22);
-            txtSideA.TabIndex = 32;
+            txtBase.Anchor = AnchorStyles.None;
+            txtBase.BackColor = Color.White;
+            txtBase.BorderStyle = BorderStyle.None;
+            txtBase.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtBase.Location = new Point(301, 106);
+            txtBase.Name = "txtBase";
+            txtBase.Size = new Size(246, 22);
+            txtBase.TabIndex = 32;
             // 
             // lblResult
             // 
@@ -137,55 +138,56 @@
             lblResult.TabIndex = 31;
             lblResult.Text = "RESULT  :";
             // 
-            // lblSideA
+            // lblBase
             // 
-            lblSideA.Anchor = AnchorStyles.None;
-            lblSideA.AutoSize = true;
-            lblSideA.BackColor = Color.White;
-            lblSideA.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            lblSideA.Location = new Point(222, 105);
-            lblSideA.Name = "lblSideA";
-            lblSideA.Size = new Size(66, 21);
-            lblSideA.TabIndex = 30;
-            lblSideA.Text = "SIDE A :";
+            lblBase.Anchor = AnchorStyles.None;
+            lblBase.AutoSize = true;
+            lblBase.BackColor = Color.White;
+            lblBase.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            lblBase.Location = new Point(222, 105);
+            lblBase.Name = "lblBase";
+            lblBase.Size = new Size(56, 21);
+            lblBase.TabIndex = 30;
+            lblBase.Text = "BASE :";
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.None;
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(txtSideB);
-            panel1.Controls.Add(lblSideB);
+            panel1.Controls.Add(txtHeight);
+            panel1.Controls.Add(lblHeight);
             panel1.Location = new Point(206, 101);
             panel1.Name = "panel1";
             panel1.Size = new Size(353, 95);
             panel1.TabIndex = 37;
             // 
-            // txtSideB
+            // txtHeight
             // 
-            txtSideB.BackColor = Color.White;
-            txtSideB.BorderStyle = BorderStyle.None;
-            txtSideB.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtSideB.Location = new Point(95, 37);
-            txtSideB.Name = "txtSideB";
-            txtSideB.Size = new Size(246, 22);
-            txtSideB.TabIndex = 21;
+            txtHeight.BackColor = Color.White;
+            txtHeight.BorderStyle = BorderStyle.None;
+            txtHeight.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtHeight.Location = new Point(95, 37);
+            txtHeight.Name = "txtHeight";
+            txtHeight.Size = new Size(246, 22);
+            txtHeight.TabIndex = 21;
             // 
-            // lblSideB
+            // lblHeight
             // 
-            lblSideB.AutoSize = true;
-            lblSideB.BackColor = Color.White;
-            lblSideB.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            lblSideB.Location = new Point(16, 37);
-            lblSideB.Name = "lblSideB";
-            lblSideB.Size = new Size(69, 21);
-            lblSideB.TabIndex = 21;
-            lblSideB.Text = "SIDE B  :";
+            lblHeight.AutoSize = true;
+            lblHeight.BackColor = Color.White;
+            lblHeight.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            lblHeight.Location = new Point(16, 37);
+            lblHeight.Name = "lblHeight";
+            lblHeight.Size = new Size(75, 21);
+            lblHeight.TabIndex = 21;
+            lblHeight.Text = "HEIGHT :";
             // 
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.BackColor = Color.White;
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
+            pictureBox1.Image = Properties.Resources.trianglesss;
             pictureBox1.Location = new Point(11, 100);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(189, 165);
@@ -202,10 +204,10 @@
             Controls.Add(btnMenu);
             Controls.Add(btnClear);
             Controls.Add(btnArea);
-            Controls.Add(txtSResult);
-            Controls.Add(txtSideA);
+            Controls.Add(txtTResult);
+            Controls.Add(txtBase);
             Controls.Add(lblResult);
-            Controls.Add(lblSideA);
+            Controls.Add(lblBase);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -228,13 +230,13 @@
         private Button btnMenu;
         private Button btnClear;
         private Button btnArea;
-        private TextBox txtSResult;
-        private TextBox txtSideA;
+        private TextBox txtTResult;
+        private TextBox txtBase;
         private Label lblResult;
-        private Label lblSideA;
+        private Label lblBase;
         private Panel panel1;
-        private TextBox txtSideB;
-        private Label lblSideB;
+        private TextBox txtHeight;
+        private Label lblHeight;
         private PictureBox pictureBox1;
     }
 }

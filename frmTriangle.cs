@@ -24,8 +24,32 @@ namespace vbGeometry
 
         private void btnArea_Click(object sender, EventArgs e)
         {
+            int parseValue;
 
+            if (txtBase.Text == "" || txtHeight.Text == "" || !int.TryParse(txtBase.Text, out parseValue) || !int.TryParse(txtHeight.Text, out parseValue))
+            {
+                btnClear_Click(sender, e);
+                MessageBox.Show("Input Valid Input");
+            }
+            else
+            {
+                double area, height, Base;
 
+                Base = Convert.ToDouble(txtBase.Text);
+                height = Convert.ToDouble(txtHeight.Text);
+
+                area = 0.5 * Base * height;
+
+                txtTResult.Text = area.ToString();
+            }
+            
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtBase.Clear();
+            txtHeight.Clear();
+            txtTResult.Clear();
         }
     }
 }
